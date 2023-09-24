@@ -11,7 +11,7 @@ export const Body = () => {
 
 
     const instantiateNumber = () => {
-        setNumber(Math.floor(Math.random() * 19))
+        setNumber(Math.floor(Math.random() * 25))
     }
 
     const refreshQuestion = () => {

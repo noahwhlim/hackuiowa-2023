@@ -9,9 +9,9 @@ export const Scenario = (props) => {
                     "Dana, a responsible 29-year-old driver, is aware of the potential liability from accidents she might cause. She's looking into options to fulfill legal requirements and protect others in case of accidents.",
                     "Ella, a cautious 27-year-old driver, values the well-being of her vehicle's occupants after an accident. She's considering coverage to help with medical expenses and protect herself and her passengers.",
                     "Frank, a 25-year-old driver, is concerned about the well-being of his vehicle's occupants in case of an accident. He's exploring options to cover expenses like hospital bills and lost income, especially since personal injury protection is required in some states and can be beneficial for managing high medical expenses.", 
-                    "George, 23, wants to protect himself on the road. He's considering coverage for underinsured motorists, which is required in some states and recommended for added security.",
+                    "George, 23, wants to protect themself on the road. They're considering coverage for underinsured motorists, which is required in some states and recommended for added security.",
                     "Hank, a 136-year-old, is thinking about the future and wants to ensure that his burial expenses are taken care of when he's no longer here. He's exploring coverage that takes care of funeral and burial expenses, making it easier on loved ones after his passing.",
-                    "Inna, 23, is thinking about securing her family's financial future. She's considering a coverage option that provides income replacement for her beneficiaries in case of her passing. It's a recommended choice for those looking to ensure their loved ones' financial stability.",
+                    "Inna, 23, is thinking about securing their family's financial future. They're considering a coverage option that provides income replacement for their beneficiaries in case of their passing. It's a recommended choice for those looking to ensure their loved ones' financial stability.",
                     "Juliet, 27, wants to ensure her life is insured for the long term. She's exploring a flexible option that can adapt as her needs change. While not as guaranteed as some choices, it provides her with peace of mind and potential growth.",
                     "Kiara, 34, wants to protect her family's future. She's considering an insurance plan that combines life coverage with investments, offering a fixed premium and the potential for increased payouts based on market performance.",
                     "Mike, 40, prioritizes his family. He wants a straightforward life insurance plan that covers his entire life and offers a guaranteed return on the policy's value. Despite the higher premium, Mike values the lifelong coverage it provides",
@@ -19,9 +19,15 @@ export const Scenario = (props) => {
                     "Sara, a 32-year-old homeowner, is actively searching for a comprehensive insurance policy. She wants to protect her valuable assets, including her house and personal belongings, against various risks.",
                     "James, a 28-year-old tenant, is in the market for insurance to protect his rented apartment. He's looking for a policy that safeguards his personal belongings and provides coverage in case of unforeseen events.",
                     "Sophia, a 45-year-old homeowner, is considering a robust insurance plan for her residence. She wants coverage that not only protects her home and belongings but also ensures they are replaced at their full value if damaged.",
-                    "Linda, 40, seeks insurance for her condo. She wants coverage for her walls, floors, ceiling, belongings, and renovations. She also values liability, medical payments, and living expenses coverage. She knows this insurance may overlap with her condo association's policy and plans to review both for complete protection.",
+                    "Linda, 40, seeks insurance for their condo. They want coverage for their walls, floors, ceiling, belongings, and renovations. They also values liability, medical payments, and living expenses coverage. They know this insurance may overlap with their condo association's policy and plans to review both for complete protection.",
                     "Mark, 45, is looking for insurance for his manufactured home. He needs coverage for the structure and belongings when the home is stationary. Mark prefers an open-peril policy for comprehensive protection, similar to HO-3.",
                     "Lisa, 55, owns a historic home that's over 40 years old and needs specialized insurance. She's looking for coverage against various perils like fire, vandalism, and theft, which are essential for older homes. Lisa is also interested in liability protection and coverage for additional living expenses.",
+                    "Polly, a 25-year old librarian, is looking to get health insurance. She's also looking to save some money and doesn't have any history of medical problems.",
+                    "Tommy, a 34-year old sailor, is looking to get health insurance. He's looking for a standard plan, and is fine with Silly Goose's approved in-network options for a primary care provider.",
+                    "Quincy, a 30-year old programmer, is looking to get health insurance. He already has a physician he likes and wants to continue seeing, but they're not in-network under Silly Goose.",
+                    "Harper, a 23-year old psychic, is looking to get health insurance. She's nervous about bad omens in her future and would like assurance that if she were to ever be disabled for a long period of time she would have some financial assistance",
+                    "Gretchen, a 29-year old french fry reviewer, is looking to get health insurance. She travels often for work so she'd like to be able to get care wherever she's traveling at the time, even if its out of network. She also doesn't want to commit to a primary service provider.",
+                    "Ricky, a 60-year old biology professor, is looking to get home insurance. He's completely paid off the mortgage on his home and is only really concerned about damage from the aircraft that frequently crash near his property." 
                   ];
 
                   
@@ -44,6 +50,12 @@ export const Scenario = (props) => {
                   //Linda -   Home - HO-6 (Walls-In)
                   //Mark -    Home - HO-7
                   //Lisa -    Home - HO-8
+                  //Polly -   Health - HDHP
+                  //Tommy -   Health - HMO
+                  //Quincy -  Health - POS
+                  //Harper -  Health - Long Term Disability
+                  //Gretchen - Health - PPO
+                  //Ricky -   Home - HO-1
 
 
 
