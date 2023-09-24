@@ -12,7 +12,7 @@ export const Game = (props) => {
     const [score, setScore] = useState(0);
     const [curChoice, setCurChoice] = useState();
     const [modalOpen, setModalOpen] = useState(false);
-    const [quota, setQuota] = useState(1);
+    const [quota, setQuota] = useState(2);
 
     const options = [
       {  label: 'Auto - Collision', value: 'Covers collision damages to your vehicle from any source regardless of fault. Required for people with a car lease or loan. Recommended for people who wouldn\'t be able to afford out of pocket repairs if the car is damaged.', key:[1]}, // Collision
