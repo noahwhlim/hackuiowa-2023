@@ -1,0 +1,17 @@
+#gameContainer{
+    /** Black with opacity **/
+    background-color:rgba(0,0,0,0.5);
+    /** Smooth transition from a greyish to a less greyish color **/
+    background-image:linear-gradient(to bottom right, rgba(255,255,255,0.2), rgba(255,255,255,0)); 
+    /* A blur effect behind the card */
+    backdrop-filter: "blur(10px)"; 
+    /** A think greyish shadow for the card to the right, bottom with a blurred shadow **/
+    box-shadow: 10px 10px 10px rgba(30,30,30,0.5);
+    /** Inner spacing between elements **/
+    padding: 10px; 
+}
+
+#gameBacking{
+  background-image: url('Logo.png');
+  background-repeat: no-repeat;
+}

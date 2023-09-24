@@ -6,7 +6,7 @@ export const Header = () => {
         
         <p>Insurance,&nbsp;</p>
         <span>
-            <p className='font-bold'>Please</p>
+            <p className='font-bold'>Please!</p>
         </span>
     </header>
   )

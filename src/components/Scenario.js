@@ -21,9 +21,9 @@ export const Scenario = (props) => {
                     "Linda, 40, seeks insurance for her condo. She wants coverage for her walls, floors, ceiling, belongings, and renovations. She also values liability, medical payments, and living expenses coverage. She knows this insurance may overlap with her condo association's policy and plans to review both for complete protection.",
                     "Mark, 45, is looking for insurance for his manufactured home. He needs coverage for the structure and belongings when the home is stationary. Mark prefers an open-peril policy for comprehensive protection, similar to HO-3.",
                     "Lisa, 55, owns a historic home that's over 40 years old and needs specialized insurance. She's looking for coverage against various perils like fire, vandalism, and theft, which are essential for older homes. Lisa is also interested in liability protection and coverage for additional living expenses.",
-
                   ];
 
+                  
                   //Amelia -  Auto - Comprehensive
                   //Bianca -  Auto - Collision
                   //Charlie - Auto - Gap
@@ -48,7 +48,7 @@ export const Scenario = (props) => {
 
   return (
     <div className='flex bg-zinc-500 m-3 p-2 rounded-md h-[98%]'>
-        {scenes[props.num]}
+        {scenes[props.num]} {props.num}
 
     </div>
   )
