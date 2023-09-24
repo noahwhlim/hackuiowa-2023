@@ -51,7 +51,7 @@ export const Game = (props) => {
       return (
         <Modal
           open={modalOpen} 
-          className='flex justify-center items-center'
+          className='flex justify-center items-center '
           id='game_text'
         >
           <Box className="flex flex-col justify-center bg-neutral-300 p-24">
