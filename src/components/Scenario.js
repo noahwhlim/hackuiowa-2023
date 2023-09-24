@@ -1,4 +1,5 @@
 import React from 'react'
+import './Body.css';
 
 
 export const Scenario = (props) => {
@@ -47,8 +48,9 @@ export const Scenario = (props) => {
 
 
   return (
-    <div className='flex bg-zinc-500 m-3 p-2 rounded-md h-[98%]'>
-        {scenes[props.num]} {props.num}
+    
+    <div className='flex'>
+        {scenes[props.num]}
 
     </div>
   )

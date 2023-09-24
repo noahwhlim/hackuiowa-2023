@@ -5,12 +5,13 @@ import { Footer } from './components/Footer';
 
 function App() {
   return (
-    <div className='flex flex-col h-screen'>
-        <Header />
-        <Body />
-        <Footer />
-
-    </div>
+    <div className='flex flex-col h-full' id="gameBacking">
+          <div>
+            <Header />  
+            <Body />
+          </div>
+            <Footer />
+          </div>
   );
 }
 

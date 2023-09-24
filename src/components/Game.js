@@ -1,11 +1,7 @@
 import React, { createContext } from 'react'
 import { useState, useContext } from 'react'
+import { Done } from '@mui/icons-material'
 import Select from 'react-select';
-
-
-
-
-
 
 export const Game = (props) => {
     
@@ -70,9 +66,9 @@ export const Game = (props) => {
   return (
     <div className='h-[98%] pb-2 m-3'>
         <div className='bg-zinc-500 mx-2 p-2 rounded-md text-white mb-3 font-bold text-3xl'>
-            Score: {score}
+            Satisfied Clients: {score}
         </div>
-        <div className='bg-zinc-500 mx-2 p-2 rounded-md '>
+        <div className='bg-zinc-500 mx-2 rounded-md p-2'>
         <Select
             options={options}
             onChange={handleSelectChange}
@@ -83,17 +79,15 @@ export const Game = (props) => {
         
         <div className='flex flex-col m-3'>
             {selected && (
-                <div className='bg-zinc-500 p-2 rounded-md border border-zinc-500 my-4'>
+                <div className='bg-zinc-500 p-2 rounded-md border text-white border-zinc-500 my-4'>
                 <p>{selected ? selected.value : ''}</p>
               </div>
             )}
             <div className=''>
                 {selected && (
-                    <button onClick={() => {props.refresh(); handleSubmit();}} className='bg-blue-500 w-full rounded-md p-2'>Submit {props.num}</button>
+                    <button onClick={() => {props.refresh(); handleSubmit();}} className='bg-blue-500 w-full rounded-md p-2'><Done/> Recommend</button>
                 )}
-                {selected && (
-                    <div>{selected.key.includes(props.num) ? "Correct!" : "Wrong :( womp womp"}</div>
-                )}
+                
 
             </div>
         </div>
@@ -102,3 +96,9 @@ export const Game = (props) => {
 }
 
  
+
+/*
+{selected && (
+                    <div>{selected.key.includes(props.num) ? "Correct!" : "Wrong :( womp womp"}</div>
+                )}
+*/

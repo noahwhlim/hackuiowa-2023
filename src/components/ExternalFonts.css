@@ -1,0 +1,17 @@
+@font-face {
+    font-family: PixelBitAdvanced;
+    src: url(pixel-bit-advanced.ttf);
+}
+
+@font-face {
+    font-family: RetroGaming;
+    src: url(Retro_Gaming.ttf);
+}
+
+header {
+    font-family: PixelBitAdvanced;
+}
+
+#game_text{
+    font-family: RetroGaming;
+}

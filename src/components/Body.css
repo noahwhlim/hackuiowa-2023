@@ -6,12 +6,33 @@
     /* A blur effect behind the card */
     backdrop-filter: "blur(10px)"; 
     /** A think greyish shadow for the card to the right, bottom with a blurred shadow **/
-    box-shadow: 10px 10px 10px rgba(30,30,30,0.5);
+    /**box-shadow: 10px 10px 10px rgba(30,30,30,0.5);**/
     /** Inner spacing between elements **/
-    padding: 10px; 
+    /**padding: 10px; **/
 }
 
 #gameBacking{
-  background-image: url('Logo.png');
+  background-image: url('TableSurface.png');
   background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#menuBacking{
+    background-image: url('GameBacker.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  #scenarioBacking{
+    background-image: url('ClipBoard.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-width: 600px; /* 100px x3 = 300 */
+  }
+
+#selectionBacking{
+    background-image: url('Tablet.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-width: 600px; /* 100px x3 = 300 */
 }

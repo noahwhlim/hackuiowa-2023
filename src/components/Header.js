@@ -1,13 +1,12 @@
 import React from 'react'
+import './ExternalFonts.css';
+import Banner from './SignBoard.png';
 
 export const Header = () => {
   return (
-    <header className='flex text-3xl text-white bg-zinc-800 py-4 px-2 justify-center'>
-        
-        <p>Insurance,&nbsp;</p>
-        <span>
-            <p className='font-bold'>Please!</p>
-        </span>
+    <header className='flex justify-center '>
+        <img src={Banner} alt="Banner"/>
     </header>
   )
 }
+//<p>Insurance, Please!</p>
