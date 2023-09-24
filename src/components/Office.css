@@ -1,0 +1,24 @@
+/* Office.css */
+
+.office-container {
+  height: 100vh; /* Set the height to 50% of the viewport height */
+  overflow: hidden; /* Hide overflow to prevent scrolling */
+  position: relative; /* Add relative positioning to contain absolute elements */
+}
+
+.office {
+  position: absolute; /* Set the position to absolute within the container */
+  top: -50%; /* Adjust the top property to scroll up (e.g., -50% for half the height) */
+  left: 0;
+  width: 100%;
+  height: 200%; /* Make the image twice as tall as the container */
+}
+
+.person {
+  /* You can adjust the positioning of the person image as needed */
+  position: absolute;
+  top: 0;
+  left: 50%; /* Position it at the middle of the container */
+  transform: translateX(-50%); /* Center horizontally */
+  z-index: 1; /* Place it above the office image */
+}
