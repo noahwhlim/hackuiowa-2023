@@ -14,7 +14,7 @@ function App() {
 
   const popupWindow = () => {
     return (
-      <Modal open={popup} className='flex justify-center items-center text-white outline-none border-none' id='game_text'>
+      <Modal open={popup} className='flex justify-center items-center text-white outline-none border-none' id='game_text' disableAutoFocus={true}>
         <Box className='flex flex-col px-24 py-12 mx-28' style={{backgroundImage: "url(/images/BeginBacker.png)", backgroundRepeat: "no-repeat",
             backgroundSize: "cover", maxWidth: 1200, maxHeight: 300, minWidth: 1200, minHeight: 300, postion: "fixed"}}>
           <p className='mb-8'>Welcome to Misfortune Metropolis, Iowa- a city where disasters are always just around the corner! To save the day Silly Goose Insurance has taken on the task of providing all kinds of insurance to help the citizens of Misfortune protect themselves against the city's many perils. As a new insurance broker Cale Amnity, it's your job to help your clients find the best insurance for their needs.</p>
