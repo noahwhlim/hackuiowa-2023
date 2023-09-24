@@ -3,7 +3,7 @@ import { useState } from 'react'
 import { Done } from '@mui/icons-material'
 import Select from 'react-select';
 import { Modal, Box } from '@mui/material';
-
+import './ExternalFonts.css';
 
 export const Game = (props) => {
     
@@ -12,6 +12,7 @@ export const Game = (props) => {
     const [score, setScore] = useState(0);
     const [curChoice, setCurChoice] = useState();
     const [modalOpen, setModalOpen] = useState(false);
+    const [quota, setQuota] = useState(1);
 
     const options = [
       {  label: 'Auto - Collision', value: 'Covers collision damages to your vehicle from any source regardless of fault. Required for people with a car lease or loan. Recommended for people who wouldn\'t be able to afford out of pocket repairs if the car is damaged.', key:[1]}, // Collision
@@ -35,7 +36,6 @@ export const Game = (props) => {
       {  label: 'Life - Variable', value: 'A type of cash value life insurance, in which part of your premium goes to investments. Has a fixed premium and guaranteed payout regardless of the market, but payout can increase when the market does well. Recommended for people who have a higher risk tolerance.', key:[10]}, //Variable
       {  label: 'Life - Whole', value: 'Covers your entire life, but typically has a higher premium. Has a guaranteed return rate on the policy’s value. Recommended for people who just want a straightforward life insurance plan and don’t mind paying the higher premium.', key:[11]}, //Whole
       {  label: 'Other - Goat', value: 'Makes your pet goat impervious to all damage. An exclusive offering of Silly Goose Insurance not available from any other provider.', key:[12]}
-
   ]
 
 
@@ -52,10 +52,11 @@ export const Game = (props) => {
         <Modal
           open={modalOpen} 
           className='flex justify-center items-center'
+          id='game_text'
         >
-          <Box className="flex flex-col justify-center bg-neutral-300 p-24 rounded-xl">
+          <Box className="flex flex-col justify-center bg-neutral-300 p-24">
             <h1 className='text-center text-4xl mb-3'>You win!</h1>
-            <button className='bg-blue-500 p-2 rounded-md font-bold' onClick={() => {window.location.reload()}}>Play again</button>
+            <button className='bg-blue-500 p-2 font-bold' onClick={() => {window.location.reload()}}>Play again!</button>
           </Box>
         </Modal>
       )
@@ -70,7 +71,7 @@ export const Game = (props) => {
 
         if (selected.key.includes(props.num)) {
             setScore(score + 1)
-            if (score >= 4) {
+            if (score >= quota) {
               setModalOpen(true)
             }
         }
@@ -88,7 +89,7 @@ export const Game = (props) => {
         {modalOpen ? modalWin() : ""}
 
         <div className='bg-zinc-500 mx-2 p-2 rounded-md text-white mb-3 font-bold text-3xl'>
-            Satisfied Clients: {score}
+            Satisfied Clients: {score} / {quota+1} 
         </div>
         <div className='bg-zinc-500 mx-2 rounded-md p-2'>
         <Select
@@ -107,7 +108,7 @@ export const Game = (props) => {
             )}
             <div className=''>
                 {selected && (
-                    <button onClick={() => {props.refresh(); handleSubmit();}} className='bg-blue-500 w-full rounded-md p-2'><Done/> Recommend</button>
+                    <button onClick={() => {props.refresh(); handleSubmit();}} className='bg-green-500 w-full rounded-md p-2'><Done/> Recommend</button>
                 )}
                 
 
