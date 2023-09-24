@@ -28,7 +28,7 @@ export const Game = (props) => {
       {  label: 'Home - HO-4 (Renters)', value: 'Insurance designed to cover rented houses and apartments. Covers damages to belongings, additional living expenses, and liability caused by the same 16 damages described in HO-3. Does not cover damage to the rental unit itself.', key:[14]}, //HO-4
       {  label: 'Home - HO-5 (Comprehensive)', value: 'The highest level of home and personal belonging coverage. Has the same coverage conditions as HO-3, but covers the replacement cost of damaged property/items instead of the cash value at time of destruction.', key:[15]}, //HO-5
       {  label: 'Home - HO-6 (Walls-In)', value: 'Insurance designed to cover people living in a condo or co-op. The policy covers damages to the walls, floors, ceiling, personal belongings, and renovations you make to the property. It also covers liability, medical payments to others injured by your property, and additional living expenses incurred by the property. This type of insurance often covers similar cases to your condo association’s insurance policy, so it’s recommended to review both to make sure there’s no gaps in coverage or areas that both policies cover.', key:[16]}, //HO-6
-      {  label: 'Home - HO-7', value: 'Insurance designed to cover single/double-wide manufactured homes, single/double-wide mobile homes, trailer, sectional homes, and modular homes. Works similarly to HO-3. Is an open-peril policy protecting the structure. Belongings are covered for the same scenarios described in HO-3. It only covers damages when the home is stationary.', key:[15]}, //HO-7
+      {  label: 'Home - HO-7', value: 'Insurance designed to cover single/double-wide manufactured homes, single/double-wide mobile homes, trailer, sectional homes, and modular homes. Works similarly to HO-3. Is an open-peril policy protecting the structure. Belongings are covered for the same scenarios described in HO-3. It only covers damages when the home is stationary.', key:[17]}, //HO-7
       {  label: 'Home - HO-8', value: 'Insurance designed to protect older homes, typically those more than 40 years old. Often applicable for historic homes and registered landmarks. These homes are a special case because their cost of repair often far exceeds their market value. Covers against fire/lightning, windstorm/hail, explosion, riot/civil commotion, damage from aircraft, damage from vehicles, smoke, vandalism, theft, and volcanic eruptions. Additionally covers liability, medical payments to others injured by your property, and additional living expenses incurred by the property.', key:[18]}, //HO-8
       {  label: 'Life - Burial', value: 'Covers expenses relating to your burial in the event of your death. Covers expenses such as a funeral, burial, and outstanding medical bills. Coverage typically has a low cap and especially if you die close to when the insurance was taken out your beneficiaries might not receive the full benefit. Recommended for people who want to have their burial covered after death.', key:[7]}, //Burial
       {  label: 'Life - Term', value: 'Replaces your income for your beneficiaries in the event of your death. Typically purchased in lengths of 5, 10, 15, 20, 25, or 30 years. Recommended for most people looking to acquire life insurance.', key:[8]}, //Term
@@ -54,9 +54,10 @@ export const Game = (props) => {
           className='flex justify-center items-center '
           id='game_text'
         >
-          <Box className="flex flex-col justify-center bg-neutral-300 p-24">
-            <h1 className='text-center text-4xl mb-3'>You win!</h1>
-            <button className='bg-blue-500 p-2 font-bold' onClick={() => {window.location.reload()}}>Play again!</button>
+          <Box className="flex flex-col justify-center p-24" style={{backgroundImage: "url(/images/EndBacker.png)", backgroundRepeat: "no-repeat",
+            backgroundSize: "cover", maxWidth: 620, maxHeight: 480, minWidth: 620, minHeight: 480, postion: "fixed",top: "5%", left: "25%", right: "25%"}}>
+            <h1 className='text-center text-5xl mb-3 text-white'>You win!</h1>
+            <button className='bg-blue-500 hover:bg-blue-700 py-3 px-4 font-bold bottom-10  rounded-md' onClick={() => {window.location.reload()}}>Play again!</button>
           </Box>
         </Modal>
       )
