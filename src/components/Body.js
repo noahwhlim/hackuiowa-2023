@@ -1,32 +1,42 @@
 import React from 'react'
 import { Scenario } from './Scenario'
 import { Game } from './Game'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 
 export const Body = () => {
 
     const [number, setNumber] = useState(0);
 
+
     const instantiateNumber = () => {
-        setNumber(Math.floor(Math.random() * 3))
-        console.log(number)
+        setNumber(Math.floor(Math.random() * 10))
     }
 
+    const refreshQuestion = () => {
+        instantiateNumber()
+    }
+
+
   return (
-    <div className='flex flex-col'>
-        <div className='flex flex-row w-full bg-blue-500 h-full'>
-            <div className='w-1/2'> 
-                <Scenario num={number}/>
+
+        <div className='flex flex-col bg-green-500 h-full'>
+            <div className='flex flex-row w-full bg-zinc-700 h-full'>
+                <div className='w-1/2'> 
+                    <Scenario num={number}/>
+                </div>
+                <div className='w-1/2'>
+                    <Game num={number} refresh={refreshQuestion}/>
+                </div>
             </div>
-            <div className='w-1/2'>
-                <Game />
+            <div className='flex bg-zinc-700 justify-center p-2'>
+                <button onClick={instantiateNumber} 
+                        className='bg-gray-200 rounded-md px-4 py-2'>
+                    New Question
+                </button>
             </div>
         </div>
-        <div>
-            <button onClick={instantiateNumber}>Press me to play</button>
-        </div>
-    </div>
+
   )
 }
 

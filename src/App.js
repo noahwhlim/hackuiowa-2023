@@ -5,16 +5,11 @@ import { Footer } from './components/Footer';
 
 function App() {
   return (
-    <div className='h-screen'>
-      <div className='h-fit'>
+    <div className='flex flex-col h-screen'>
         <Header />
-      </div>
-      <div className='h-5/6'>
         <Body />
-      </div>
-      <div className='h-fit'>
         <Footer />
-      </div>
+
     </div>
   );
 }
