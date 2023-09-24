@@ -21,7 +21,7 @@ export const Body = () => {
 
   return (
     
-            <div className='flex flex-col h-full' id="game_text">
+            <div className='flex flex-col h-screen' id="game_text">
                 <div className='flex flex-row w-full h-full'>
                         <div className='w-1/2 bg-no-repeat bg-cover min-w-[600px]' style={{backgroundImage: "url(/images/Clipboard.png)"}}> 
                             <div className='px-12 py-40'>

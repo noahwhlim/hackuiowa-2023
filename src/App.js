@@ -3,8 +3,10 @@ import React from 'react';
 import { useState } from 'react';
 import { Header } from './components/Header';
 import { Body } from './components/Body';
-import { Footer } from './components/Footer';
+import Footer from './components/Footer';
 import { Modal, Box } from '@mui/material';
+import './App.css';
+
 
 function App() {
   const [popup, setPopup] = useState(true)
@@ -21,12 +23,14 @@ function App() {
   }
 
   return (
-    <div className='flex flex-col h-full' id="gameBacking">
-            {popup ? popupWindow() : <></>}
-            <Header />  
-            <Body />
-            <Footer />
+    <div className='flex flex-col min-h-screen' id="gameBacking">
+    {popup ? popupWindow() : <></>}
+    <Header />  
+    <div className="scrollable-content">
+      <Body />
     </div>
+    <Footer />
+  </div>
   );
 }
 

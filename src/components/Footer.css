@@ -1,0 +1,16 @@
+#gameBacking {
+  flex: 1; /* Allow the middle content to expand and take up available space */
+}
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  margin-top: auto; /* This pushes the footer to the bottom */
+}
+
+.footer-link {
+  text-decoration: underline;
+}
+

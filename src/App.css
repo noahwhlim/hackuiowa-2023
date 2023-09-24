@@ -1,0 +1,10 @@
+/* App.css */
+
+#gameBacking {
+  flex: 1;
+}
+
+.scrollable-content {
+  flex: 1;
+  overflow-y: auto;
+}
