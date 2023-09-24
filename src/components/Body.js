@@ -2,7 +2,7 @@ import React from 'react'
 import { Scenario } from './Scenario'
 import { Game } from './Game'
 import { useState, useEffect } from 'react'
-
+import './Body.css';
 
 export const Body = () => {
 
@@ -10,7 +10,7 @@ export const Body = () => {
 
 
     const instantiateNumber = () => {
-        setNumber(number + 1)
+        setNumber(Math.floor(Math.random() * 10))
     }
 
     const refreshQuestion = () => {
@@ -30,6 +30,10 @@ export const Body = () => {
                 </div>
             </div>
             <div className='flex bg-zinc-700 justify-center p-2'>
+                <button onClick={instantiateNumber} 
+                        className='bg-gray-200 rounded-md px-4 py-2'>
+                    New Question
+                </button>
             </div>
         </div>
 

@@ -1,0 +1,11 @@
+.window-container {
+  position: absolute;
+  width: 200px; /* Set the width of the draggable window */
+  height: 200px; /* Set the height of the draggable window */
+  background-color: lightgray; /* Set the background color */
+  cursor: grab; /* Add a grab cursor to indicate draggable */
+}
+
+.window-container:hover {
+  cursor: grabbing; /* Change cursor when dragging */
+}

@@ -22,3 +22,54 @@
   transform: translateX(-50%); /* Center horizontally */
   z-index: 1; /* Place it above the office image */
 }
+
+@-webkit-keyframes move {
+  from {
+    left: 0;
+  }
+
+  to {
+    left: 50%;
+  }
+}
+
+@keyframes move {
+  from {
+    left: 0;
+  }
+
+  to {
+    left: 50%;
+  }
+}
+
+body {
+  background: black;
+}
+
+a#rotator {
+  text-decoration: none;
+  padding-right: 20px;
+  left: 50%;
+  position: absolute;
+  -webkit-animation: move 5s;
+  animation: move 5s;
+}
+
+a#rotator img {
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  -ms-transition: all 1s ease-in-out;
+  border-radius: 60px;
+  transition-duration: 1s;
+}
+
+a#rotator img:hover {
+  box-shadow: 0 3px 15px #000;
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  transform: translate()
+}
