@@ -1,7 +1,9 @@
-import React, { createContext } from 'react'
-import { useState, useContext } from 'react'
+import React from 'react'
+import { useState } from 'react'
 import { Done } from '@mui/icons-material'
 import Select from 'react-select';
+import { Modal, Box } from '@mui/material';
+
 
 export const Game = (props) => {
     
@@ -9,6 +11,7 @@ export const Game = (props) => {
     const [submitted, setSubmitted] = useState(false);
     const [score, setScore] = useState(0);
     const [curChoice, setCurChoice] = useState();
+    const [modalOpen, setModalOpen] = useState(false);
 
     const options = [
       {  label: 'Auto - Collision', value: 'Covers collision damages to your vehicle from any source regardless of fault. Required for people with a car lease or loan. Recommended for people who wouldn\'t be able to afford out of pocket repairs if the car is damaged.', key:[1]}, // Collision
@@ -37,22 +40,39 @@ export const Game = (props) => {
 
 
     const handleSelectChange = (newChoice) => {
-        if (newChoice != curChoice) {
+        if (newChoice !== curChoice) {
             setCurChoice(newChoice)
             setSelected(newChoice);
             setSubmitted(false);
         }
     };
+
+    const modalWin = () => {
+      return (
+        <Modal
+          open={modalOpen} 
+          className='flex justify-center items-center'
+        >
+          <Box className="flex flex-col justify-center bg-neutral-300 p-24 rounded-xl">
+            <h1 className='text-center text-4xl mb-3'>You win!</h1>
+            <button className='bg-blue-500 p-2 rounded-md font-bold' onClick={() => {window.location.reload()}}>Play again</button>
+          </Box>
+        </Modal>
+      )
+    }
     
     const handleSubmit = () => {
       // Handle the submission here, you can access the selected value in the 'selected' state
-      if (selected && submitted == false) {
+      if (selected && submitted === false) {
         // Do something with the selected value
         console.log("Submitted: ", submitted)
         setSubmitted(true); // Set submitted to true to indicate the user has submitted their choice
 
         if (selected.key.includes(props.num)) {
             setScore(score + 1)
+            if (score >= 4) {
+              setModalOpen(true)
+            }
         }
       } else {
         // Handle the case where the user hasn't selected anything
@@ -65,6 +85,8 @@ export const Game = (props) => {
     
   return (
     <div className='h-[98%] pb-2 m-3'>
+        {modalOpen ? modalWin() : ""}
+
         <div className='bg-zinc-500 mx-2 p-2 rounded-md text-white mb-3 font-bold text-3xl'>
             Satisfied Clients: {score}
         </div>

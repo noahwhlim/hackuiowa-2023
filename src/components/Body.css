@@ -17,22 +17,22 @@
   background-size: cover;
 }
 
-#menuBacking{
+/* #menuBacking{
     background-image: url('GameBacker.png');
     background-repeat: no-repeat;
     background-size: cover;
-  }
+  } */
 
-  #scenarioBacking{
+  /* #scenarioBacking{
     background-image: url('ClipBoard.png');
     background-repeat: no-repeat;
     background-size: cover;
-    min-width: 600px; /* 100px x3 = 300 */
-  }
+    min-width: 600px; 100px x3 = 300
+  } */
 
-#selectionBacking{
+/* #selectionBacking{
     background-image: url('Tablet.png');
     background-repeat: no-repeat;
     background-size: cover;
-    min-width: 600px; /* 100px x3 = 300 */
-}
+    min-width: 600px; 100px x3 = 300
+} */

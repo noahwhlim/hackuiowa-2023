@@ -5,7 +5,7 @@ import './Body.css';
 export const Scenario = (props) => {
     const scenes = ["Amelia, a 28-year-old, recently financed a new car. Worried about potential damage from non-driving incidents like vandalism or natural disasters, she's exploring coverage options to protect her investment.",
                     "Bianca, a 35-year-old car owner, worries about the expense of fixing her vehicle if it's damaged in an accident. She's exploring options to safeguard her investment.",
-                    "Charlie, a 29-year-old with a car loan, is concerned about the potential financial gap between what he owes on the loan and the actual value of his car. He's exploring options to protect himself from unexpected expenses.",
+                    "Charlie, a 29-year-old with a car loan, is concerned about the potential financial p between what he owes on the loan and the actual value of his car. He's exploring options to protect himself from unexpected expenses.",
                     "Dana, a responsible 29-year-old driver, is aware of the potential liability from accidents she might cause. She's looking into options to fulfill legal requirements and protect others in case of accidents.",
                     "Ella, a cautious 27-year-old driver, values the well-being of her vehicle's occupants after an accident. She's considering coverage to help with medical expenses and protect herself and her passengers.",
                     "Frank, a 25-year-old driver, is concerned about the well-being of his vehicle's occupants in case of an accident. He's exploring options to cover expenses like hospital bills and lost income, especially since personal injury protection is required in some states and can be beneficial for managing high medical expenses.", 

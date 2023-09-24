@@ -2,7 +2,7 @@ import React from 'react'
 import { Scenario } from './Scenario'
 import { Game } from './Game'
 import { useState, useEffect } from 'react'
-import './Body.css';
+// import './Body.css';
 import './ExternalFonts.css';
 
 export const Body = () => {
@@ -23,12 +23,12 @@ export const Body = () => {
     
             <div className='flex flex-col h-full' id="game_text">
                 <div className='flex flex-row w-full h-full'>
-                        <div className='w-1/2' id="scenarioBacking"> 
+                        <div className='w-1/2 bg-no-repeat bg-cover min-w-[600px]' style={{backgroundImage: "url(/images/Clipboard.png)"}}> 
                             <div className='px-12 py-40'>
                                 <Scenario num={number}/>
                             </div>
                         </div>
-                        <div className='w-1/2' id="selectionBacking">
+                        <div className='w-1/2 bg-no-repeat bg-cover min-w-[600px]' style={{backgroundImage: "url(/images/Tablet.png)"}}>
                             <div className='px-10 py-28'>
                                 <Game num={number} refresh={refreshQuestion}/>
                             </div>
